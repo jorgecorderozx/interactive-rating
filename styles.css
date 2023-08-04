@@ -37,7 +37,7 @@ section {
     align-items: flex-start;
 }
 
-.ratingContainer, #submitButton {
+.ratingContainer, .orangeButtons {
     align-self: center;
 }
 
@@ -55,7 +55,7 @@ h2 {
     margin: 0.7rem 0;
 }
 
-h2, #submitButton {
+h2, .orangeButtons {
     color: hsl(0, 0%, 100%);
 }
 
@@ -92,7 +92,7 @@ button {
     border-radius: 50%;
 }
 
-#submitButton {
+.orangeButtons {
     background-color: hsl(25, 97%, 53%);
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -125,6 +125,7 @@ button:hover {
 }
 
 .ratingButton:hover{
+    transition: 0.5s;
     background-color: hsl(25, 97%, 53%);
     color: hsl(0, 0%, 100%);
 }
@@ -134,9 +135,14 @@ button:hover {
     color: hsl(0, 0%, 100%);
 }
 
-#submitButton:hover {
+.orangeButtons:hover {
+    transition: 0.5s;
     background-color: hsl(0, 0%, 100%);
     color: hsl(25, 97%, 53%);
+}
+
+#rateAgain {
+    margin-top: 1rem;
 }
 
 @media (min-width:764px){
