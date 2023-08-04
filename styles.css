@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Overpass, "sans serif";
+    font-size: 15px;
+    background-color: hsl(216, 12%, 8%);
+}
+
+body, .ratingContainer, section{
+    display: flex;
+}
+
+body, section {
+    flex-direction: column;
+    
+}
+
+body, #thankYouSection{
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    background-color: #212832;
+    margin: 1rem;
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+
+#mainSection {
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.ratingContainer, #submitButton {
+    align-self: center;
+}
+
+img[alt="Star Icon"]{
+    scale: 0.7;
+    padding: 1rem;
+    border-radius: 50%;
+    position: relative;
+    right: 0.5rem;
+}
+
+
+h2 {
+    font-weight: 700;
+    margin: 0.7rem 0;
+}
+
+h2, #submitButton {
+    color: hsl(0, 0%, 100%);
+}
+
+p {
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+p, .ratingButton {
+    color: hsl(217, 12%, 63%);
+}
+
+.ratingButton, img[alt="Star Icon"], .ratingParagraph {
+    background-color: #262f38;
+}
+
+button {
+    font-family: inherit;
+    font-weight: 700;
+    border: none;
+}
+
+.ratingContainer{
+    width: 100%;
+    gap:1.5rem;
+    margin: 1rem 0;
+    justify-content: center;
+    
+}
+
+.ratingButton {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+#submitButton {
+    background-color: hsl(25, 97%, 53%);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    width: 100%;
+    border-radius: 2rem;
+    padding: 1rem;
+}
+
+
+
+#thankYouSection{
+    padding: 1.8rem 1.4rem;
+    display: none;
+}
+
+.ratingParagraph{
+    color: hsl(25, 97%, 53%);
+    text-align: center;
+    padding: 0.3rem 1rem;
+    border-radius: 2rem;
+    margin: 1.3rem 0;
+}
+
+#thankYouSection p {
+    text-align: center;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.ratingButton:hover{
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+}
+
+.ratingButton:focus {
+    background-color: hsl(217, 12%, 63%);
+    color: hsl(0, 0%, 100%);
+}
+
+#submitButton:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+}
+
+@media (min-width:764px){
+    section{
+        width: 400px;
+        padding: 2rem;
+    }
+
+    .ratingContainer {
+        gap: 1.2rem;
+
+    }
+
+    .ratingButton{
+       width: 50px;
+       height: 50px;
+    }
+
+    #thankYouSection{
+        padding: 3rem 1.8rem;
+    }
+
+    #thankYouSection h2{
+        font-size: 1.8rem;
+        position: relative;
+        left: 5px;
+    }
+}
+
